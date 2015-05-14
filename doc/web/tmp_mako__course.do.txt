@@ -1,0 +1,138 @@
+# Strange way of testing for vortex...
+TITLE: Doctoral Training Program at the European Center for Theoretical Nuclear Physics and Related Areas
+AUTHOR: Morten Hjorth-Jensen at Department of Physics, University of Oslo & Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University
+DATE: May 18-22, 2015
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The teaching material is produced in various formats for printing and on-screen reading.
+
+!split
+The PDF files are based on LaTeX and have seldom technical
+failures that cannot be easily corrected.
+The HTML-based files, called ``HTML'' and ``ipynb'' below, apply MathJax
+for rendering LaTeX formulas and sometimes this technology gives rise
+to unexpected failures (e.g.,
+incorrect rendering in a web page despite correct LaTeX syntax in the
+formula). Consult the corresponding PDF
+files if you find missing or incorrectly rendered
+formulas in HTML or ipython notebook files.
+
+
+======= Lectures in Many-body theory  =======
+
+===== Reminder on second quantization =====
+
+
+
+ * LaTeX PDF:
+   * For printing:
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print6.pdf"
+   * For screen viewing:
+     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-beamer.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/html/secondquant-solarized.html"
+   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/html/secondquant-reveal.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/ipynb/secondquant.ipynb"
+
+
+
+===== Mean-field theories, from Hartree-Fock to Density Functional theory =====
+
+
+
+ * LaTeX PDF:
+   * For printing:
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print6.pdf"
+   * For screen viewing:
+     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-beamer.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/html/hfock-solarized.html"
+   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/html/hfock-reveal.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/ipynb/hfock.ipynb"
+
+
+
+===== Full configuration interaction theory =====
+
+
+
+ * LaTeX PDF:
+   * For printing:
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print6.pdf"
+   * For screen viewing:
+     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-beamer.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/html/fci-solarized.html"
+   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/html/fci-reveal.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/ipynb/fci.ipynb"
+
+
+
+===== Many-body perturbation theory =====
+
+
+
+ * LaTeX PDF:
+   * For printing:
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print6.pdf"
+   * For screen viewing:
+     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-beamer.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/html/mbpt-solarized.html"
+   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/html/mbpt-reveal.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/ipynb/mbpt.ipynb"
+
+
+
+===== Coupled cluster theory =====
+
+
+
+ * LaTeX PDF:
+   * For printing:
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print6.pdf"
+   * For screen viewing:
+     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-beamer.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/html/cc-solarized.html"
+   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/html/cc-reveal.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/ipynb/cc.ipynb"
+
+
+
+===== Project =====
+
+
+
+ * LaTeX PDF:
+   * For printing:
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print6.pdf"
+   * For screen viewing:
+     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-beamer.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/html/proj-solarized.html"
+   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/html/proj-reveal.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/ipynb/proj.ipynb"
+
+
+
+
+

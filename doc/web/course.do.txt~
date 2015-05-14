@@ -1,31 +1,27 @@
 # Strange way of testing for vortex...
 # #ifdef NON_VORTEX
-TITLE: Overview of course material: PHY981 Nuclear Structure 
+TITLE: Doctoral Training Program at the European Center for Theoretical Nuclear Physics and Related Areas
 
 TOC: off
 # #else
-TITLE: Overview of course material: PHY981 Nuclear Structure 
-AUTHOR: Morten Hjorth-Jensen  Email:hjensen@nscl.msu.edu
+TITLE: Doctoral Training Program at the European Center for Theoretical Nuclear Physics and Related Areas
+AUTHOR: Morten Hjorth-Jensen at Department of Physics, University of Oslo & Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University
+DATE: May 18-22, 2015
+
+
+
 # #endif
 
 <%
-pub_url = 'https://github.com/NuclearStructure/PHY981/doc/pub'
-published = ['intro', 'spdata', 'hfock', 'secondquant', 'forces', 'fci', 'decays', 'simplemodels', 'mbpt', 'cc', 'srg', 'gf', 'mc', 'inf',]
+pub_url = 'https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub'
+published = ['secondquant', 'hfock', 'fci', 'simplemodels', 'mbpt', 'cc', 'proj',]
 chapters = {
- 'intro': 'Introduction to nuclear structure',
- 'spdata': 'Single-particle data, experimental information and simple models',
- 'hfock': 'Mean-field theories',
- 'secondquant': 'Second quantization',
- 'forces': 'Models for nuclear forces',
- 'fci': 'The nuclear shell model and full configuration interaction theory',
- 'decays': 'Nuclear decays',
- 'simplemodels': 'Pairing, random-phase approximation and simple models',
- 'mbpt': 'Effective interactions for the nuclear shell-model',
- 'cc': 'Coupled cluster theory and nuclear structure',
- 'srg': 'Similarity transformation methods',
- 'gf': 'Green function theory based methods',
- 'mc': 'Monte Carlo  methods',
- 'inf': 'From nuclei to stars, properties of infinite nuclear matter, symmetric and neutron rich',
+ 'secondquant': 'Reminder on second quantization',
+ 'hfock': 'Mean-field theories, from Hartree-Fock to Density Functional theory',
+ 'fci': 'Full configuration interaction theory',
+ 'mbpt': 'Many-body perturbation theory',
+ 'cc': 'Coupled cluster theory',
+ 'proj': 'Project',
 }
 %>
 
@@ -65,7 +61,7 @@ files if you find missing or incorrectly rendered
 formulas in HTML or ipython notebook files.
 
 
-======= PHY981: Nuclear Structure notes =======
+======= Lectures in Many-body theory  =======
 
 % for ch in published:
 ===== ${chapters[ch]} =====
