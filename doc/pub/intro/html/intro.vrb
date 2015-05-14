@@ -1,0 +1,48 @@
+\frametitle{Python code for solving exercise 2}
+
+\begin{block}{}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+from numpy import *
+from numpy.linalg import eig
+from pylab import *
+from matplotlib import rc, rcParams
+import matplotlib.units as units
+import matplotlib.ticker as ticker
+import sys
+import os
+# set tickers etc
+rc('text',usetex=True)
+rc('font',**{'family':'serif','serif':['Energies']})
+title(r'{\bf Energies}', fontsize=20)
+
+
+def exercise2(g):
+    z = ones((3,3), dtype = float)*-.5*g
+    z[0,0] = 2-g
+    z[1,1] = 4-g
+    z[2,2] = 6-g
+    n1 = range(3)
+    n2 = range(3)
+    n2.reverse()
+    z[n2, n1] = 0
+    return z
+print exercise2(1)
+
+N = 1000
+Z = zeros((N,3), dtype = float)
+G = linspace(1,10,N)
+for i in range(N):
+    Z[i] = eig(exercise2(G[i]))[0]
+
+plot(G,Z[:,0])
+
+#Z2 = zeros((N,5), dtype = float)
+#for i in range(N):
+#    Z2[i] = eig(exercise2(G[i])[0:2,0:2])[0]
+#plot(G,Z)
+
+savefig('exercise2.pdf', format='pdf')
+# Draw the plot to screen
+show()
+\end{minted}
+\end{block}
