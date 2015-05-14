@@ -17,7 +17,7 @@ DATE: May 18-22, 2015
 
 
 The teaching material is produced in various formats for printing and on-screen reading.
-
+If you are not familiar with second quantization, we recommend that you go through the additional material included here. 
 !split
 The PDF files are based on LaTeX and have seldom technical
 failures that cannot be easily corrected.
@@ -29,6 +29,36 @@ formula). Consult the corresponding PDF
 files if you find missing or incorrectly rendered
 formulas in HTML or ipython notebook files.
 
+!split
+=====  Plan for the lectures May 18-22, 2015 =====
+!bblock
+* Monday May 18
+  o  Lecture 10am-11am: Introduction to the many-body problem and Hartree-Fock (HF) theory
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: Hartree-Fock (HF) theory continues
+  o  Lunch   12.30pm-2pm
+  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+* Tuesday May 19
+  o  Lecture 10am-11am: Finalizing HF theory
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: Full configuration interaction theory (FCI)
+  o  Lunch   12.30pm-2pm
+  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+* Wednesday May 20
+  o  Lecture 10am-11am: FCI and start Many-body perturbation theory (MBPT)
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: MBPT
+  o  Lunch   12.30pm-2pm
+  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+* Thursday May 21
+  o  Lecture 10am-11am: Coupled cluster theory (CC)
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: CC and summary
+  o  Lunch   12.30pm-2pm
+  o  The afternoon can be used as time for discussion for those who are interested
+* Friday May 22
+  o  Self-study
+!eblock
 
 ======= Lectures in Many-body theory  =======
 
@@ -38,12 +68,9 @@ formulas in HTML or ipython notebook files.
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print6.pdf"
-   * For screen viewing:
-     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-beamer.pdf"
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/html/secondquant-solarized.html"
-   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/html/secondquant-reveal.html"
  * iPython notebook:
    * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/ipynb/secondquant.ipynb"
 
@@ -55,12 +82,9 @@ formulas in HTML or ipython notebook files.
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print6.pdf"
-   * For screen viewing:
-     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-beamer.pdf"
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/html/hfock-solarized.html"
-   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/html/hfock-reveal.html"
  * iPython notebook:
    * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/ipynb/hfock.ipynb"
 
@@ -72,12 +96,9 @@ formulas in HTML or ipython notebook files.
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print6.pdf"
-   * For screen viewing:
-     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-beamer.pdf"
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/html/fci-solarized.html"
-   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/html/fci-reveal.html"
  * iPython notebook:
    * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/ipynb/fci.ipynb"
 
@@ -89,12 +110,9 @@ formulas in HTML or ipython notebook files.
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print6.pdf"
-   * For screen viewing:
-     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-beamer.pdf"
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/html/mbpt-solarized.html"
-   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/html/mbpt-reveal.html"
  * iPython notebook:
    * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/ipynb/mbpt.ipynb"
 
@@ -106,31 +124,39 @@ formulas in HTML or ipython notebook files.
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print6.pdf"
-   * For screen viewing:
-     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-beamer.pdf"
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/html/cc-solarized.html"
-   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/html/cc-reveal.html"
  * iPython notebook:
    * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/ipynb/cc.ipynb"
 
 
 
-===== Project =====
+===== How to build a numerical project =====
 
 
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf", compact: "6 pages per sheet": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print6.pdf"
-   * For screen viewing:
-     * "standard Beamer format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-beamer.pdf"
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/html/proj-solarized.html"
-   * "reveal.js beige slide style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/html/proj-reveal.html"
  * iPython notebook:
    * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/ipynb/proj.ipynb"
+
+
+
+===== Infinite nuclear matter =====
+
+
+
+ * LaTeX PDF:
+   * For printing:
+     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/pdf/inf-print.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/html/inf-solarized.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/ipynb/inf.ipynb"
 
 
 

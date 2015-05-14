@@ -14,14 +14,15 @@ DATE: May 18-22, 2015
 
 <%
 pub_url = 'https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub'
-published = ['secondquant', 'hfock', 'fci', 'simplemodels', 'mbpt', 'cc', 'proj',]
+published = ['intro', 'secondquant', 'hfock', 'fci', 'mbpt', 'cc', 'proj', 'inf',]
 chapters = {
  'secondquant': 'Reminder on second quantization',
  'hfock': 'Mean-field theories, from Hartree-Fock to Density Functional theory',
  'fci': 'Full configuration interaction theory',
  'mbpt': 'Many-body perturbation theory',
  'cc': 'Coupled cluster theory',
- 'proj': 'Project',
+ 'proj': 'How to build a numerical project',
+ 'inf': 'Infinite nuclear matter',
 }
 %>
 
@@ -33,12 +34,9 @@ chapters = {
 
  * LaTeX PDF:
    * For printing:
-     * "Standard one-page format": "${pub_url}/${name}/pdf/${name}-print.pdf", compact: "6 pages per sheet": "${pub_url}/${name}/pdf/${name}-print6.pdf"
-   * For screen viewing:
-     * "standard Beamer format": "${pub_url}/${name}/pdf/${name}-beamer.pdf"
+     * "Standard one-page format": "${pub_url}/${name}/pdf/${name}-print.pdf"
  * HTML:
    * "solarized style": "${pub_url}/${name}/html/${name}-solarized.html"
-   * "reveal.js beige slide style": "${pub_url}/${name}/html/${name}-reveal.html"
  * iPython notebook:
    * "ipynb file": "${pub_url}/${name}/ipynb/${name}.ipynb"
 
@@ -48,7 +46,7 @@ chapters = {
 </%def>
 
 The teaching material is produced in various formats for printing and on-screen reading.
-
+If you are not familiar with second quantization, we recommend that you go through the additional material included here. 
 !split
 The PDF files are based on LaTeX and have seldom technical
 failures that cannot be easily corrected.
@@ -60,6 +58,36 @@ formula). Consult the corresponding PDF
 files if you find missing or incorrectly rendered
 formulas in HTML or ipython notebook files.
 
+!split
+=====  Plan for the lectures May 18-22, 2015 =====
+!bblock
+* Monday May 18
+  o  Lecture 10am-11am: Introduction to the many-body problem and Hartree-Fock (HF) theory
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: Hartree-Fock (HF) theory continues
+  o  Lunch   12.30pm-2pm
+  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+* Tuesday May 19
+  o  Lecture 10am-11am: Finalizing HF theory
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: Full configuration interaction theory (FCI)
+  o  Lunch   12.30pm-2pm
+  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+* Wednesday May 20
+  o  Lecture 10am-11am: FCI and start Many-body perturbation theory (MBPT)
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: MBPT
+  o  Lunch   12.30pm-2pm
+  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+* Thursday May 21
+  o  Lecture 10am-11am: Coupled cluster theory (CC)
+  o  Break 11am-11.30am
+  o  Lecture 11.30am-12.30pm: CC and summary
+  o  Lunch   12.30pm-2pm
+  o  The afternoon can be used as time for discussion for those who are interested
+* Friday May 22
+  o  Self-study
+!eblock
 
 ======= Lectures in Many-body theory  =======
 
