@@ -25,6 +25,32 @@ pre {
   border: 0pt solid #93a1a1;
   box-shadow: none;
 }
+.alert-text-small   { font-size: 80%;  }
+.alert-text-large   { font-size: 130%; }
+.alert-text-normal  { font-size: 90%;  }
+.alert {
+  padding:8px 35px 8px 14px; margin-bottom:18px;
+  text-shadow:0 1px 0 rgba(255,255,255,0.5);
+  border:1px solid #93a1a1;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #555;
+  background-color: #eee8d5;
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  background-size: 38px;
+  padding-left: 55px;
+  width: 75%;
+ }
+.alert-block {padding-top:14px; padding-bottom:14px}
+.alert-block > p, .alert-block > ul {margin-bottom:1em}
+.alert li {margin-top: 1em}
+.alert-block p+p {margin-top:5px}
+.alert-notice { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_question.png); }
 
 div { text-align: justify; text-justify: inter-word; }
 </style>
@@ -34,16 +60,21 @@ div { text-align: justify; text-justify: inter-word; }
 
 <!-- tocinfo
 {'highest level': 1,
- 'sections': [(' Lectures in Many-body theory  ', 1, None, '___sec0'),
-              (' Reminder on second quantization ', 2, None, '___sec1'),
+ 'sections': [('  Plan for the lectures May 18-22, 2015 ',
+               2,
+               None,
+               '___sec0'),
+              (' Lectures in Many-body theory  ', 1, None, '___sec1'),
+              (' Reminder on second quantization ', 2, None, '___sec2'),
               (' Mean-field theories, from Hartree-Fock to Density Functional theory ',
                2,
                None,
-               '___sec2'),
-              (' Full configuration interaction theory ', 2, None, '___sec3'),
-              (' Many-body perturbation theory ', 2, None, '___sec4'),
-              (' Coupled cluster theory ', 2, None, '___sec5'),
-              (' Project ', 2, None, '___sec6')]}
+               '___sec3'),
+              (' Full configuration interaction theory ', 2, None, '___sec4'),
+              (' Many-body perturbation theory ', 2, None, '___sec5'),
+              (' Coupled cluster theory ', 2, None, '___sec6'),
+              (' How to build a numerical project ', 2, None, '___sec7'),
+              (' Infinite nuclear matter ', 2, None, '___sec8')]}
 end of tocinfo -->
 
 <body>
@@ -72,8 +103,7 @@ end of tocinfo -->
 <center><h4>May 18-22, 2015</h4></center> <!-- date -->
 <p>
 The teaching material is produced in various formats for printing and on-screen reading.
-
-<p>
+If you are not familiar with second quantization, we recommend that you go through the additional material included here. 
 <!-- !split -->
 The PDF files are based on LaTeX and have seldom technical
 failures that cannot be easily corrected.
@@ -85,9 +115,68 @@ formula). Consult the corresponding PDF
 files if you find missing or incorrectly rendered
 formulas in HTML or ipython notebook files.
 
-<h1 id="___sec0">Lectures in Many-body theory  </h1>
+<p>
+<!-- !split -->
 
-<h2 id="___sec1">Reminder on second quantization </h2>
+<h2 id="___sec0">Plan for the lectures May 18-22, 2015 </h2>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+
+<ul>
+<li> Monday May 18</li>
+
+<ol>
+  <li> Lecture 10am-11am: Introduction to the many-body problem and Hartree-Fock (HF) theory</li>
+  <li> Break 11am-11.30am</li>
+  <li> Lecture 11.30am-12.30pm: Hartree-Fock (HF) theory continues</li>
+  <li> Lunch   12.30pm-2pm</li>
+  <li> Lecture 2pm-3pm: How to build a numerical quantum mechanical project</li>
+</ol>
+
+<li> Tuesday May 19</li>
+
+<ol>
+  <li> Lecture 10am-11am: Finalizing HF theory</li>
+  <li> Break 11am-11.30am</li>
+  <li> Lecture 11.30am-12.30pm: Full configuration interaction theory (FCI)</li>
+  <li> Lunch   12.30pm-2pm</li>
+  <li> Lecture 2pm-3pm: How to build a numerical quantum mechanical project</li>
+</ol>
+
+<li> Wednesday May 20</li>
+
+<ol>
+  <li> Lecture 10am-11am: FCI and start Many-body perturbation theory (MBPT)</li>
+  <li> Break 11am-11.30am</li>
+  <li> Lecture 11.30am-12.30pm: MBPT</li>
+  <li> Lunch   12.30pm-2pm</li>
+  <li> Lecture 2pm-3pm: How to build a numerical quantum mechanical project</li>
+</ol>
+
+<li> Thursday May 21</li>
+
+<ol>
+  <li> Lecture 10am-11am: Coupled cluster theory (CC)</li>
+  <li> Break 11am-11.30am</li>
+  <li> Lecture 11.30am-12.30pm: CC and summary</li>
+  <li> Lunch   12.30pm-2pm</li>
+  <li> The afternoon can be used as time for discussion for those who are interested</li>
+</ol>
+
+<li> Friday May 22</li>
+
+<ol>
+  <li> Self-study</li>
+</ol>
+
+</ul>
+</div>
+
+
+<h1 id="___sec1">Lectures in Many-body theory  </h1>
+
+<h2 id="___sec2">Reminder on second quantization </h2>
 
 <ul>
  <li> LaTeX PDF:</li>
@@ -96,13 +185,7 @@ formulas in HTML or ipython notebook files.
    <li> For printing:</li>
 
 <ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print6.pdf" target="_self">6 pages per sheet</a></li>
-</ul>
-
-   <li> For screen viewing:</li>
-
-<ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-beamer.pdf" target="_self">standard Beamer format</a></li>
+     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf" target="_self">Standard one-page format</a></li>
 </ul>
 
 </ul>
@@ -111,7 +194,6 @@ formulas in HTML or ipython notebook files.
 
 <ul>
    <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/html/secondquant-solarized.html" target="_self">solarized style</a></li>
-   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/html/secondquant-reveal.html" target="_self">reveal.js beige slide style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -122,7 +204,7 @@ formulas in HTML or ipython notebook files.
 
 </ul>
 
-<h2 id="___sec2">Mean-field theories, from Hartree-Fock to Density Functional theory </h2>
+<h2 id="___sec3">Mean-field theories, from Hartree-Fock to Density Functional theory </h2>
 
 <ul>
  <li> LaTeX PDF:</li>
@@ -131,13 +213,7 @@ formulas in HTML or ipython notebook files.
    <li> For printing:</li>
 
 <ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print6.pdf" target="_self">6 pages per sheet</a></li>
-</ul>
-
-   <li> For screen viewing:</li>
-
-<ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-beamer.pdf" target="_self">standard Beamer format</a></li>
+     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf" target="_self">Standard one-page format</a></li>
 </ul>
 
 </ul>
@@ -146,7 +222,6 @@ formulas in HTML or ipython notebook files.
 
 <ul>
    <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/html/hfock-solarized.html" target="_self">solarized style</a></li>
-   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/html/hfock-reveal.html" target="_self">reveal.js beige slide style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -157,7 +232,7 @@ formulas in HTML or ipython notebook files.
 
 </ul>
 
-<h2 id="___sec3">Full configuration interaction theory </h2>
+<h2 id="___sec4">Full configuration interaction theory </h2>
 
 <ul>
  <li> LaTeX PDF:</li>
@@ -166,13 +241,7 @@ formulas in HTML or ipython notebook files.
    <li> For printing:</li>
 
 <ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print6.pdf" target="_self">6 pages per sheet</a></li>
-</ul>
-
-   <li> For screen viewing:</li>
-
-<ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-beamer.pdf" target="_self">standard Beamer format</a></li>
+     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf" target="_self">Standard one-page format</a></li>
 </ul>
 
 </ul>
@@ -181,7 +250,6 @@ formulas in HTML or ipython notebook files.
 
 <ul>
    <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/html/fci-solarized.html" target="_self">solarized style</a></li>
-   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/html/fci-reveal.html" target="_self">reveal.js beige slide style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -192,7 +260,7 @@ formulas in HTML or ipython notebook files.
 
 </ul>
 
-<h2 id="___sec4">Many-body perturbation theory </h2>
+<h2 id="___sec5">Many-body perturbation theory </h2>
 
 <ul>
  <li> LaTeX PDF:</li>
@@ -201,13 +269,7 @@ formulas in HTML or ipython notebook files.
    <li> For printing:</li>
 
 <ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print6.pdf" target="_self">6 pages per sheet</a></li>
-</ul>
-
-   <li> For screen viewing:</li>
-
-<ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-beamer.pdf" target="_self">standard Beamer format</a></li>
+     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf" target="_self">Standard one-page format</a></li>
 </ul>
 
 </ul>
@@ -216,7 +278,6 @@ formulas in HTML or ipython notebook files.
 
 <ul>
    <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/html/mbpt-solarized.html" target="_self">solarized style</a></li>
-   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/html/mbpt-reveal.html" target="_self">reveal.js beige slide style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -227,7 +288,7 @@ formulas in HTML or ipython notebook files.
 
 </ul>
 
-<h2 id="___sec5">Coupled cluster theory </h2>
+<h2 id="___sec6">Coupled cluster theory </h2>
 
 <ul>
  <li> LaTeX PDF:</li>
@@ -236,13 +297,7 @@ formulas in HTML or ipython notebook files.
    <li> For printing:</li>
 
 <ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print6.pdf" target="_self">6 pages per sheet</a></li>
-</ul>
-
-   <li> For screen viewing:</li>
-
-<ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-beamer.pdf" target="_self">standard Beamer format</a></li>
+     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf" target="_self">Standard one-page format</a></li>
 </ul>
 
 </ul>
@@ -251,7 +306,6 @@ formulas in HTML or ipython notebook files.
 
 <ul>
    <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/html/cc-solarized.html" target="_self">solarized style</a></li>
-   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/html/cc-reveal.html" target="_self">reveal.js beige slide style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -262,7 +316,7 @@ formulas in HTML or ipython notebook files.
 
 </ul>
 
-<h2 id="___sec6">Project </h2>
+<h2 id="___sec7">How to build a numerical project </h2>
 
 <ul>
  <li> LaTeX PDF:</li>
@@ -271,13 +325,7 @@ formulas in HTML or ipython notebook files.
    <li> For printing:</li>
 
 <ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print6.pdf" target="_self">6 pages per sheet</a></li>
-</ul>
-
-   <li> For screen viewing:</li>
-
-<ul>
-     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-beamer.pdf" target="_self">standard Beamer format</a></li>
+     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf" target="_self">Standard one-page format</a></li>
 </ul>
 
 </ul>
@@ -286,13 +334,40 @@ formulas in HTML or ipython notebook files.
 
 <ul>
    <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/html/proj-solarized.html" target="_self">solarized style</a></li>
-   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/html/proj-reveal.html" target="_self">reveal.js beige slide style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
 
 <ul>
    <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/ipynb/proj.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec8">Infinite nuclear matter </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/pdf/inf-print.pdf" target="_self">Standard one-page format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/html/inf-solarized.html" target="_self">solarized style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/ipynb/inf.ipynb" target="_self">ipynb file</a></li>
 </ul>
 
 </ul>
