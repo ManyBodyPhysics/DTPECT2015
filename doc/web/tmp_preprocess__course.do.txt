@@ -1,16 +1,10 @@
 # Strange way of testing for vortex...
-# #ifdef NON_VORTEX
-TITLE: Doctoral Training Program at the European Center for Theoretical Nuclear Physics and Related Areas
-
-TOC: off
-# #else
 TITLE: Doctoral Training Program at the European Center for Theoretical Nuclear Physics and Related Areas
 AUTHOR: Morten Hjorth-Jensen at Department of Physics, University of Oslo & Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University
 DATE: May 18-22, 2015
 
 
 
-# #endif
 
 <%
 pub_url = 'https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub'
