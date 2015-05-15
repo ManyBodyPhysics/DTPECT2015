@@ -36,25 +36,25 @@ formulas in HTML or ipython notebook files.
   o  Lecture 10am-11am: Introduction to the many-body problem and Hartree-Fock (HF) theory
   o  Break 11am-11.30am
   o  Lecture 11.30am-12.30pm: Hartree-Fock (HF) theory continues
-  o  Lunch   12.30pm-2pm
-  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+  o  Lunch   12.30pm-2.30pm
+  o  Lecture 2.30pm-3.30pm: How to build a numerical quantum mechanical project
 * Tuesday May 19
   o  Lecture 10am-11am: Finalizing HF theory
   o  Break 11am-11.30am
   o  Lecture 11.30am-12.30pm: Full configuration interaction theory (FCI)
-  o  Lunch   12.30pm-2pm
-  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+  o  Lunch   12.30pm-2.30pm
+  o  Lecture 2.30pm-3.30pm: How to build a numerical quantum mechanical project
 * Wednesday May 20
   o  Lecture 10am-11am: FCI and start Many-body perturbation theory (MBPT)
   o  Break 11am-11.30am
   o  Lecture 11.30am-12.30pm: MBPT
-  o  Lunch   12.30pm-2pm
-  o  Lecture 2pm-3pm: How to build a numerical quantum mechanical project
+  o  Lunch   12.30pm-2.30pm
+  o  Lecture 2.30pm-3.30pm: How to build a numerical quantum mechanical project
 * Thursday May 21
   o  Lecture 10am-11am: Coupled cluster theory (CC)
   o  Break 11am-11.30am
   o  Lecture 11.30am-12.30pm: CC and summary
-  o  Lunch   12.30pm-2pm
+  o  Lunch   12.30pm-2.30pm
   o  The afternoon can be used as time for discussion for those who are interested
 * Friday May 22
   o  Self-study
@@ -62,13 +62,25 @@ formulas in HTML or ipython notebook files.
 
 ======= Lectures in Many-body theory  =======
 
+===== Introduction and motivation =====
+
+
+
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/intro/pdf/intro-print.pdf"
+ * HTML:
+   * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/intro/html/intro-solarized.html"
+ * iPython notebook:
+   * "ipynb file": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/intro/ipynb/intro.ipynb"
+
+
+
 ===== Reminder on second quantization =====
 
 
 
- * LaTeX PDF:
-   * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf"
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/secondquant/html/secondquant-solarized.html"
  * iPython notebook:
@@ -80,9 +92,8 @@ formulas in HTML or ipython notebook files.
 
 
 
- * LaTeX PDF:
-   * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf"
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/hfock/html/hfock-solarized.html"
  * iPython notebook:
@@ -94,9 +105,8 @@ formulas in HTML or ipython notebook files.
 
 
 
- * LaTeX PDF:
-   * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf"
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/fci/html/fci-solarized.html"
  * iPython notebook:
@@ -108,9 +118,8 @@ formulas in HTML or ipython notebook files.
 
 
 
- * LaTeX PDF:
-   * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf"
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/mbpt/html/mbpt-solarized.html"
  * iPython notebook:
@@ -122,9 +131,8 @@ formulas in HTML or ipython notebook files.
 
 
 
- * LaTeX PDF:
-   * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf"
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/cc/html/cc-solarized.html"
  * iPython notebook:
@@ -136,9 +144,8 @@ formulas in HTML or ipython notebook files.
 
 
 
- * LaTeX PDF:
-   * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf"
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/proj/html/proj-solarized.html"
  * iPython notebook:
@@ -150,9 +157,8 @@ formulas in HTML or ipython notebook files.
 
 
 
- * LaTeX PDF:
-   * For printing:
-     * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/pdf/inf-print.pdf"
+ * LaTeX PDF for printing/viewing:
+   * "Standard one-page format": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/pdf/inf-print.pdf"
  * HTML:
    * "solarized style": "https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub/inf/html/inf-solarized.html"
  * iPython notebook:

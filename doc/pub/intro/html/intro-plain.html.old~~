@@ -6,9 +6,9 @@ Automatically generated HTML file from DocOnce source
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
-<meta name="description" content="Quantum Mechanics of Many-Particle Systems FYS-KJM4480/9480">
+<meta name="description" content="Nuclear Structure, PHY981  Lectures, Spring semester 2015">
 
-<title>Quantum Mechanics of Many-Particle Systems FYS-KJM4480/9480</title>
+<title>Nuclear Structure, PHY981  Lectures, Spring semester 2015</title>
 
 
 <style type="text/css">
@@ -65,48 +65,22 @@ div { text-align: justify; text-justify: inter-word; }
 
 <!-- tocinfo
 {'highest level': 2,
- 'sections': [(' Overview of week 34 ', 2, None, '___sec0'),
-              (' Overview of week 35 ', 2, None, '___sec1'),
+ 'sections': [(' Overview of first week  ', 2, None, '___sec0'),
+              (' Overview of first week  ', 2, None, '___sec1'),
               (' Lectures, exercise sessions and syllabus ',
                2,
                None,
                '___sec2'),
-              (' Quantum Many-particle Methods covered ', 2, None, '___sec3'),
+              (' Main themes and reading suggestions ', 2, None, '___sec3'),
               (' Plan for the semester ', 2, None, '___sec4'),
-              (' Selected Texts and Many-body theory ', 2, None, '___sec5'),
-              (' Definitions ', 2, None, '___sec6'),
-              (' Definitions ', 2, None, '___sec7'),
-              (' Definitions ', 2, None, '___sec8'),
-              (' Definitions ', 2, None, '___sec9'),
-              (' Definitions ', 2, None, '___sec10'),
-              (' Definitions ', 2, None, '___sec11'),
-              (' Definitions and notations ', 2, None, '___sec12'),
-              (' Definitions and notations ', 2, None, '___sec13'),
-              (' Definitions and notations ', 2, None, '___sec14'),
-              (' Definitions and notations ', 2, None, '___sec15'),
-              (' Definitions and notations ', 2, None, '___sec16'),
-              (' Definitions and notations ', 2, None, '___sec17'),
-              (' Definitions and notations ', 2, None, '___sec18'),
-              (' Definitions and notations ', 2, None, '___sec19'),
-              (' Definitions and notations ', 2, None, '___sec20'),
-              (' Definitions and notations ', 2, None, '___sec21'),
-              (' Definitions and notations ', 2, None, '___sec22'),
-              (' Definitions and notations ', 2, None, '___sec23'),
-              (' Definitions and notations ', 2, None, '___sec24'),
-              (' Definitions and notations ', 2, None, '___sec25'),
-              (' Definitions and notations ', 2, None, '___sec26'),
-              (' Definitions and notations ', 2, None, '___sec27'),
-              (' Definitions and notations ', 2, None, '___sec28'),
-              (' Definitions and notations ', 2, None, '___sec29'),
-              (' Definitions and notations ', 2, None, '___sec30'),
-              (' Definitions and notations ', 2, None, '___sec31'),
-              (' Definitions and notations ', 2, None, '___sec32'),
-              (' Definitions and notations ', 2, None, '___sec33'),
-              (' Definitions and notations ', 2, None, '___sec34'),
-              (' Definitions and notations ', 2, None, '___sec35'),
-              ('  Exercises week 35 ', 2, None, '___sec36'),
-              ('  Exercises week 35 ', 2, None, '___sec37'),
-              ('  Python code for solving exercise 2 ', 2, None, '___sec38')]}
+              (' Selected Texts on Nuclear Structure and Many-body theory ',
+               2,
+               None,
+               '___sec5'),
+              (' Links and useful software ', 2, None, '___sec6'),
+              (' Links and useful software ', 2, None, '___sec7'),
+              (' Background enquiry ', 2, None, '___sec8'),
+              ('  First exercise: Exercise 1  ', 2, None, '___sec9')]}
 end of tocinfo -->
 
 <body>
@@ -141,26 +115,23 @@ MathJax.Hub.Config({
 <p>
 <!-- ------------------- main content ---------------------- -->
 
-<!-- Slides for FYS-KJM4480 -->
+<!-- Slides for PHY981 Nuclear Structure -->
 
 
-<center><h1>Quantum Mechanics of Many-Particle Systems FYS-KJM4480/9480</h1></center>  <!-- document title -->
+<center><h1>Nuclear Structure, PHY981  Lectures, Spring semester 2015</h1></center>  <!-- document title -->
 
 <p>
-<!-- author(s): Morten Hjorth-Jensen -->
+<!-- author(s): Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA and Department of Physics, University of Oslo, Oslo, Norway -->
 
 <center>
-<b>Morten Hjorth-Jensen</b> [1, 2]
+<b>Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA and Department of Physics, University of Oslo, Oslo, Norway</b> 
 </center>
 
 
 <p>
 <!-- institution(s) -->
-
-<center>[1] <b>Department of Physics, University of Oslo</b></center>
-<center>[2] <b>Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University</b></center>
 <p>
-<center><h4>Jan 20, 2015</h4></center> <!-- date -->
+<center><h4>Spring 2015 </h4></center> <!-- date -->
 <p>
 <p>
 <!-- begin bottom navigation -->
