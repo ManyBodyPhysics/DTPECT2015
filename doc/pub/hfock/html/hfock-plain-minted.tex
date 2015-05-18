@@ -3,33 +3,8 @@
 %% (https://github.com/hplgit/doconce/)
 %%
 %%
-% #ifdef PTEX2TEX_EXPLANATION
-%%
-%% The file follows the ptex2tex extended LaTeX format, see
-%% ptex2tex: http://code.google.com/p/ptex2tex/
-%%
-%% Run
-%%      ptex2tex myfile
-%% or
-%%      doconce ptex2tex myfile
-%%
-%% to turn myfile.p.tex into an ordinary LaTeX file myfile.tex.
-%% (The ptex2tex program: http://code.google.com/p/ptex2tex)
-%% Many preprocess options can be added to ptex2tex or doconce ptex2tex
-%%
-%%      ptex2tex -DMINTED myfile
-%%      doconce ptex2tex myfile envir=minted
-%%
-%% ptex2tex will typeset code environments according to a global or local
-%% .ptex2tex.cfg configure file. doconce ptex2tex will typeset code
-%% according to options on the command line (just type doconce ptex2tex to
-%% see examples). If doconce ptex2tex has envir=minted, it enables the
-%% minted style without needing -DMINTED.
-% #endif
 
-% #define PREAMBLE
 
-% #ifdef PREAMBLE
 %-------------------- begin preamble ----------------------
 
 \documentclass[%
@@ -92,7 +67,6 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 \begin{document}
 
 % endif for #ifdef PREAMBLE
-% #endif
 
 
 % ------------------- main content ----------------------
@@ -132,7 +106,7 @@ May 18-22 2015
 
 
 % !split
-\subsection{Why Hartree-Fock? Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Why Hartree-Fock? Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -170,7 +144,7 @@ that is to find a local minimum with a Slater determinant $\Phi_0$ being the ans
 
 
 % !split
-\subsection{Why Hartree-Fock? Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Why Hartree-Fock? Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -188,7 +162,7 @@ The so-called Hartree-Fock potential $\hat{u}^{\mathrm{HF}}$ brings an explicit 
 
 
 % !split
-\subsection{Variational Calculus and Lagrangian Multipliers}
+\subsection*{Variational Calculus and Lagrangian Multipliers}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -213,7 +187,7 @@ The constraints can be treated via the technique of Lagrangian multipliers
 
 
 % !split
-\subsection{Variational Calculus and Lagrangian Multipliers}
+\subsection*{Variational Calculus and Lagrangian Multipliers}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -236,7 +210,7 @@ We will, for the sake of notational convenience,  skip the variables $x,y,z$ bel
 
 
 % !split
-\subsection{Variational Calculus and Lagrangian Multipliers}
+\subsection*{Variational Calculus and Lagrangian Multipliers}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -255,7 +229,7 @@ Inserting this expression into the expectation value for the energy and taking t
 
 
 % !split
-\subsection{Variational Calculus and Lagrangian Multipliers}
+\subsection*{Variational Calculus and Lagrangian Multipliers}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -278,7 +252,7 @@ where we have skipped the dependence on $x,y,z$ and introduced the shorthand $\p
 
 
 % !split
-\subsection{Variational Calculus and Lagrangian Multipliers}
+\subsection*{Variational Calculus and Lagrangian Multipliers}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -302,7 +276,7 @@ a powerful method for obtaining approximate solutions of the wave function.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -328,7 +302,7 @@ one derived from the self-consistent solution of the Hartree-Fock equations to b
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -353,7 +327,7 @@ has to be antisymmetric, resulting in the eigenvalue $\beta = -1$.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -373,7 +347,7 @@ are quantum numbers needed to describe remaining quantum numbers.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -394,7 +368,7 @@ many-body interactions are present.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -413,7 +387,7 @@ where we have used the shorthand $d\mathbf{\tau}=dx_1dr_2\dots dr_A$.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -430,7 +404,7 @@ summation over all possible permutations of two particles.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -451,7 +425,7 @@ Hartree-function, defined by the simple product of all possible single-particle 
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -471,7 +445,7 @@ determinant reproduces it.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -499,7 +473,7 @@ replace $\hat{H}_0$ with the sum of one-body operators
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -523,7 +497,7 @@ sum of one-body Hamiltonians
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -542,7 +516,7 @@ and rewrite Eq.~(\ref{H1Expectation}) as
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -565,7 +539,7 @@ Hamiltonian.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -585,7 +559,7 @@ are orthogonal.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -613,7 +587,7 @@ all pairs twice.
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -628,7 +602,7 @@ are defined as the overlap
 
 
 % !split
-\subsection{Definitions and notations}
+\subsection*{Definitions and notations}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -657,7 +631,7 @@ and
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -676,7 +650,7 @@ where we have used the shorthand $d\mathbf{\tau}=dx_1dx_2\dots dx_A$.
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -706,7 +680,7 @@ with the the Hartree-function given by the simple product of all possible single
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -727,7 +701,7 @@ The more compact version reads
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -744,7 +718,7 @@ or in the more general case
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -769,7 +743,7 @@ The antisymmetric matrix element is also hermitian, implying
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -793,7 +767,7 @@ In our coordinate space derivations below we will spell out the Hartree-Fock equ
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -814,7 +788,7 @@ For the orthogonal wave functions $\psi_{i}$ this reduces to
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -843,7 +817,7 @@ Variation with respect to the single-particle wave functions $\psi_{\mu}$ yields
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -867,7 +841,7 @@ as summation indices, we obtain two identical terms.
 
 
 % !split
-\subsection{Derivation of Hartree-Fock equations in coordinate space}
+\subsection*{Derivation of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -889,7 +863,7 @@ This alternative derivation of the Hartree-Fock equations is given below.
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations in coordinate space}
+\subsection*{Analysis of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -913,7 +887,7 @@ respectively.
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations in coordinate space}
+\subsection*{Analysis of Hartree-Fock equations in coordinate space}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -946,7 +920,7 @@ We normally rewrite the last equation as
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -965,7 +939,7 @@ to truncate the above sum.  We assume that the basis $\phi_{\lambda}$ is orthogo
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -984,7 +958,7 @@ are defined as the overlap
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -997,7 +971,7 @@ For general single-particle states we employ the labels $pqrs\dots$.
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1021,7 +995,7 @@ where $\Phi^{HF}$ is the new Slater determinant defined by the new basis of Eq.~
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1036,7 +1010,7 @@ Using Eq.~(\ref{eq:newbasis}) we can rewrite Eq.~(\ref{FunctionalEPhi2}) as
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1058,7 +1032,7 @@ which allows us to define a functional to be minimized that reads
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1078,7 +1052,7 @@ the following Hartree-Fock equations
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1093,7 +1067,7 @@ Note that the sums over greek indices run over the number of basis set functions
 
 
 % !split
-\subsection{Hartree-Fock by varying the coefficients of a wave function expansion}
+\subsection*{Hartree-Fock by varying the coefficients of a wave function expansion}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1114,7 +1088,7 @@ It suffices to tabulate the matrix elements $\langle \alpha | h | \beta \rangle$
 
 
 % !split
-\subsection{Hartree-Fock algorithm}
+\subsection*{Hartree-Fock algorithm}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1130,7 +1104,7 @@ $\epsilon_i^{\mathrm{HF}}$ do not change anymore by a prefixed quantity.
 
 
 % !split
-\subsection{Hartree-Fock algorithm}
+\subsection*{Hartree-Fock algorithm}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1153,7 +1127,7 @@ can be written out in a more compact form as
 
 
 % !split
-\subsection{Hartree-Fock algorithm}
+\subsection*{Hartree-Fock algorithm}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1177,7 +1151,7 @@ To set up the algorithm we can proceed as follows:
 
 
 % !split
-\subsection{Hartree-Fock algorithm}
+\subsection*{Hartree-Fock algorithm}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1203,7 +1177,7 @@ energies and $m$ is the number of single-particle states.
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1223,7 +1197,7 @@ Our single-particle states $ijk\dots$ are now single-particle states obtained fr
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1238,7 +1212,7 @@ This form will be used in our discussion of Koopman's theorem.
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{Atomic physics case.}
@@ -1262,7 +1236,7 @@ where we have removed a single-particle state $k\le F$, that is a state below th
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1285,7 +1259,7 @@ which is just our definition of the Hartree-Fock single-particle energy
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1300,7 +1274,7 @@ Koopman's theorem states that for example the ionization energy of a closed-shel
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1318,7 +1292,7 @@ in terms of the particles or degrees of freedom which we believe are the fundame
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations, Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations, Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1342,7 +1316,7 @@ where we have removed a single-particle state $k\le F$, that is a state below th
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1368,7 +1342,7 @@ which is just our definition of the Hartree-Fock single-particle energy
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1387,7 +1361,7 @@ define separation energies. We have thus our first link between nuclear forces (
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1413,7 +1387,7 @@ BE(^{16}\mathrm{O})-BE(^{15}\mathrm{N})\approx \epsilon_{0p^{\pi}_{1/2}}^{\mathr
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1433,7 +1407,7 @@ ${}^{68}\mbox{Ni}$, ${}^{78}\mbox{Ni}$, ${}^{90}\mbox{Zr}$, ${}^{88}\mbox{Sr}$, 
 
 
 % !split
-\subsection{Analysis of Hartree-Fock equations and Koopman's theorem}
+\subsection*{Analysis of Hartree-Fock equations and Koopman's theorem}
 
 % --- begin paragraph admon ---
 \paragraph{}
@@ -1461,7 +1435,7 @@ and
 
 
 % !split
-\subsection{Exercises: Derivation of Hartree-Fock equations}
+\subsection*{Exercises: Derivation of Hartree-Fock equations}
 
 % --- begin paragraph admon ---
 \paragraph{Exercise 1.}
@@ -1484,7 +1458,7 @@ Show that the old and the new Slater determinants are equal up to a complex cons
 
 
 % !split
-\subsection{Exercises: Derivation of Hartree-Fock equations}
+\subsection*{Exercises: Derivation of Hartree-Fock equations}
 
 % --- begin paragraph admon ---
 \paragraph{Exercise 2.}
@@ -1524,9 +1498,7 @@ Show that
 % ------------------- end of main content ---------------
 
 
-% #ifdef PREAMBLE
 \printindex
 
 \end{document}
-% #endif
 
