@@ -6,9 +6,9 @@ Automatically generated HTML file from DocOnce source
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
-<meta name="description" content="Nuclear Structure, PHY981  Lectures, Spring semester 2015">
+<meta name="description" content="Introduction and motivation">
 
-<title>Nuclear Structure, PHY981  Lectures, Spring semester 2015</title>
+<title>Introduction and motivation</title>
 
 
 <style type="text/css">
@@ -65,22 +65,129 @@ div { text-align: justify; text-justify: inter-word; }
 
 <!-- tocinfo
 {'highest level': 2,
- 'sections': [(' Overview of first week  ', 2, None, '___sec0'),
-              (' Overview of first week  ', 2, None, '___sec1'),
-              (' Lectures, exercise sessions and syllabus ',
+ 'sections': [(' Motivation ', 2, None, '___sec0'),
+              (' Motivation ', 2, None, '___sec1'),
+              (' Motivation ', 2, None, '___sec2'),
+              (' Motivation ', 2, None, '___sec3'),
+              (' Motivation ', 2, None, '___sec4'),
+              (' Motivation ', 2, None, '___sec5'),
+              (' Motivation ', 2, None, '___sec6'),
+              (' Motivation ', 2, None, '___sec7'),
+              (' Motivation ', 2, None, '___sec8'),
+              (' Recent articles on Oxygen isotopes ', 2, None, '___sec9'),
+              (' Motivation ', 2, None, '___sec10'),
+              (' Masses and Binding energies ', 2, None, '___sec11'),
+              (' Masses and Binding energies ', 2, None, '___sec12'),
+              (' Masses and Binding energies ', 2, None, '___sec13'),
+              (' Masses and Binding energies ', 2, None, '___sec14'),
+              (' Liquid drop model as a simple parametrization of binding energies  ',
                2,
                None,
-               '___sec2'),
-              (' Main themes and reading suggestions ', 2, None, '___sec3'),
-              (' Plan for the semester ', 2, None, '___sec4'),
-              (' Selected Texts on Nuclear Structure and Many-body theory ',
+               '___sec15'),
+              (' Liquid drop model as a simple parametrization of binding energies  ',
                2,
                None,
-               '___sec5'),
-              (' Links and useful software ', 2, None, '___sec6'),
-              (' Links and useful software ', 2, None, '___sec7'),
-              (' Background enquiry ', 2, None, '___sec8'),
-              ('  First exercise: Exercise 1  ', 2, None, '___sec9')]}
+               '___sec16'),
+              (' Masses and Binding energies ', 2, None, '___sec17'),
+              (' Masses and Binding energies ', 2, None, '___sec18'),
+              (' $Q$-values and separation energies ', 2, None, '___sec19'),
+              (' Motivation ', 2, None, '___sec20'),
+              (' $Q$-values and separation energies ', 2, None, '___sec21'),
+              (' $Q$-values and separation energies ', 2, None, '___sec22'),
+              ('  Separation energies and energy gaps ', 2, None, '___sec23'),
+              ('  Separation energies for oxygen isotopes ',
+               2,
+               None,
+               '___sec24'),
+              ('  Energy gaps for oxygen isotopes ', 2, None, '___sec25'),
+              (' Features to be noted  ', 2, None, '___sec26'),
+              (' Radii  ', 2, None, '___sec27'),
+              (' Radii  ', 2, None, '___sec28'),
+              (' Definitions ', 2, None, '___sec29'),
+              (' Definitions ', 2, None, '___sec30'),
+              (' Definitions ', 2, None, '___sec31'),
+              (' Definitions ', 2, None, '___sec32'),
+              (' Definitions ', 2, None, '___sec33'),
+              (' Definitions ', 2, None, '___sec34'),
+              (' Definitions ', 2, None, '___sec35'),
+              (' Definitions and notations ', 2, None, '___sec36'),
+              (' Definitions and notations ', 2, None, '___sec37'),
+              (' Definitions and notations ', 2, None, '___sec38'),
+              (' A modified Hamiltonian  ', 2, None, '___sec39'),
+              (' A modified Hamiltonian  ', 2, None, '___sec40'),
+              (' A modified Hamiltonian  ', 2, None, '___sec41'),
+              (' A modified Hamiltonian  ', 2, None, '___sec42'),
+              (' The harmonic oscillator Hamiltonian  ', 2, None, '___sec43'),
+              (' Translationally Invariant Hamiltonian  ',
+               2,
+               None,
+               '___sec44'),
+              (' The harmonic oscillator Hamiltonian  ', 2, None, '___sec45'),
+              (' The harmonic oscillator Hamiltonian  ', 2, None, '___sec46'),
+              (' Translationally Invariant Hamiltonian  ',
+               2,
+               None,
+               '___sec47'),
+              (' The Woods-Saxon potential  ', 2, None, '___sec48'),
+              (' The Woods-Saxon potential  ', 2, None, '___sec49'),
+              (' Single-particle Hamiltonians and spin-orbit force  ',
+               2,
+               None,
+               '___sec50'),
+              (' Single-particle Hamiltonians and spin-orbit force  ',
+               2,
+               None,
+               '___sec51'),
+              ('   Single-particle Hamiltonians and spin-orbit force  ',
+               2,
+               None,
+               '___sec52'),
+              ('   Single-particle Hamiltonians and spin-orbit force  ',
+               2,
+               None,
+               '___sec53'),
+              ('   Single-particle Hamiltonians and spin-orbit force  ',
+               2,
+               None,
+               '___sec54'),
+              (' Numerical solution of the single-particle Schroedinger equation ',
+               2,
+               None,
+               '___sec55'),
+              ('  Numerical solution of the single-particle Schroedinger equation ',
+               2,
+               None,
+               '___sec56'),
+              ('  Numerical solution of the single-particle Schroedinger equation ',
+               2,
+               None,
+               '___sec57'),
+              ('  Numerical solution of the single-particle Schroedinger equation ',
+               2,
+               None,
+               '___sec58'),
+              ('  Numerical solution of the single-particle Schroedinger equation ',
+               2,
+               None,
+               '___sec59'),
+              ('  Numerical solution of the single-particle Schroedinger equation ',
+               2,
+               None,
+               '___sec60'),
+              ('  Numerical solution of the single-particle Schroedinger equation ',
+               2,
+               None,
+               '___sec61'),
+              ("  Program to solve Schroedinger's equation  ",
+               2,
+               None,
+               '___sec62'),
+              ("  Program to solve Schroedinger's equation  ",
+               2,
+               None,
+               '___sec63'),
+              ('  Exercise 1  ', 2, None, '___sec64'),
+              ('  Exercise 2  ', 2, None, '___sec65')]}
 end of tocinfo -->
 
 <body>
@@ -115,10 +222,10 @@ MathJax.Hub.Config({
 <p>
 <!-- ------------------- main content ---------------------- -->
 
-<!-- Slides for PHY981 Nuclear Structure -->
+<!-- Slides for PHY981 -->
 
 
-<center><h1>Nuclear Structure, PHY981  Lectures, Spring semester 2015</h1></center>  <!-- document title -->
+<center><h1>Introduction and motivation</h1></center>  <!-- document title -->
 
 <p>
 <!-- author(s): Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA and Department of Physics, University of Oslo, Oslo, Norway -->
@@ -127,11 +234,10 @@ MathJax.Hub.Config({
 <b>Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA and Department of Physics, University of Oslo, Oslo, Norway</b> 
 </center>
 
-
 <p>
 <!-- institution(s) -->
 <p>
-<center><h4>Spring 2015 </h4></center> <!-- date -->
+<center><h4>May 18-22 2015</h4></center> <!-- date -->
 <p>
 <p>
 <!-- begin bottom navigation -->
