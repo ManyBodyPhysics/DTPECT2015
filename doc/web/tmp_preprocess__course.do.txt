@@ -7,7 +7,7 @@ DATE: May 18-22, 2015
 
 
 <%
-pub_url = 'https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub'
+pub_url = 'https://github.com/DTPECT2015/doc/pub'
 published = ['intro', 'secondquant', 'hfock', 'fci', 'mbpt', 'cc', 'proj', 'inf',]
 chapters = {
  'intro': 'Introduction and motivation',

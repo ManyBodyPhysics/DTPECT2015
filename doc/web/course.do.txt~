@@ -14,8 +14,9 @@ DATE: May 18-22, 2015
 
 <%
 pub_url = 'https://github.com/ManyBodyPhysics/DTPECT2015/doc/pub'
-published = ['secondquant', 'hfock', 'fci', 'mbpt', 'cc', 'proj', 'inf',]
+published = ['intro', 'secondquant', 'hfock', 'fci', 'mbpt', 'cc', 'proj', 'inf',]
 chapters = {
+ 'intro': 'Introduction and motivation',
  'secondquant': 'Reminder on second quantization',
  'hfock': 'Mean-field theories, from Hartree-Fock to Density Functional theory',
  'fci': 'Full configuration interaction theory',
