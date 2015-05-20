@@ -1,195 +1,183 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="description" content="How do develop a numerical project">
 
-% LaTeX Beamer file automatically generated from DocOnce
-% https://github.com/hplgit/doconce
+<title>How do develop a numerical project</title>
 
-%-------------------- begin beamer-specific preamble ----------------------
 
-\documentclass{beamer}
+<style type="text/css">
+/* blueish style */
 
-\usetheme{red_plain}
-\usecolortheme{default}
+/* Color definitions:  http://www.december.com/html/spec/color0.html
+   CSS examples:       http://www.w3schools.com/css/css_examples.asp */
 
-% turn off the almost invisible, yet disturbing, navigation symbols:
-\setbeamertemplate{navigation symbols}{}
-
-% Examples on customization:
-%\usecolortheme[named=RawSienna]{structure}
-%\usetheme[height=7mm]{Rochester}
-%\setbeamerfont{frametitle}{family=\rmfamily,shape=\itshape}
-%\setbeamertemplate{items}[ball]
-%\setbeamertemplate{blocks}[rounded][shadow=true]
-%\useoutertheme{infolines}
-%
-%\usefonttheme{}
-%\useinntertheme{}
-%
-%\setbeameroption{show notes}
-%\setbeameroption{show notes on second screen=right}
-
-% fine for B/W printing:
-%\usecolortheme{seahorse}
-
-\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
-\usepackage{graphicx}
-\usepackage{epsfig}
-\usepackage{relsize}
-
-\usepackage{fancybox}  % make sure fancybox is loaded before fancyvrb
-
-\usepackage{fancyvrb}
-\usepackage{minted} % requires pygments and latex -shell-escape filename
-%\usepackage{anslistings}
-%\usepackage{listingsutf8}
-
-\usepackage{amsmath,amssymb,bm}
-%\usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{colortbl}
-\usepackage[english]{babel}
-\usepackage{tikz}
-\usepackage{framed}
-% Use some nice templates
-\beamertemplatetransparentcovereddynamic
-
-% --- begin table of contents based on sections ---
-% Delete this, if you do not want the table of contents to pop up at
-% the beginning of each section:
-% (Only section headings can enter the table of contents in Beamer
-% slides generated from DocOnce source, while subsections are used
-% for the title in ordinary slides.)
-\AtBeginSection[]
-{
-  \begin{frame}<beamer>[plain]
-  \frametitle{}
-  %\frametitle{Outline}
-  \tableofcontents[currentsection]
-  \end{frame}
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
 }
-% --- end table of contents based on sections ---
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+/* pre style removed because it will interfer with pygments */
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+.alert-text-small   { font-size: 80%;  }
+.alert-text-large   { font-size: 130%; }
+.alert-text-normal  { font-size: 90%;  }
+.alert {
+  padding:8px 35px 8px 14px; margin-bottom:18px;
+  text-shadow:0 1px 0 rgba(255,255,255,0.5);
+  border:1px solid #bababa;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #555;
+  background-color: #f8f8f8;
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  background-size: 38px;
+  padding-left: 55px;
+  width: 75%;
+ }
+.alert-block {padding-top:14px; padding-bottom:14px}
+.alert-block > p, .alert-block > ul {margin-bottom:1em}
+.alert li {margin-top: 1em}
+.alert-block p+p {margin-top:5px}
+.alert-notice { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_question.png); }
 
-% If you wish to uncover everything in a step-wise fashion, uncomment
-% the following command:
-
-%\beamerdefaultoverlayspecification{<+->}
-
-\newcommand{\shortinlinecomment}[3]{\note{\textbf{#1}: #2}}
-\newcommand{\longinlinecomment}[3]{\shortinlinecomment{#1}{#2}{#3}}
-
-\definecolor{linkcolor}{rgb}{0,0,0.4}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=linkcolor,
-    urlcolor=linkcolor,
-    pdfmenubar=true,
-    pdftoolbar=true,
-    bookmarksdepth=3
-    }
-\setlength{\parskip}{0pt}  % {1em}
-
-\newenvironment{doconceexercise}{}{}
-\newcounter{doconceexercisecounter}
-\newenvironment{doconce:movie}{}{}
-\newcounter{doconce:movie:counter}
-
-\newcommand{\subex}[1]{\noindent\textbf{#1}}  % for subexercises: a), b), etc
-
-%-------------------- end beamer-specific preamble ----------------------
-
-% Add user's preamble
-
-
-
-
-% insert custom LaTeX commands...
-
-\raggedbottom
-\makeindex
-
-%-------------------- end preamble ----------------------
-
-\begin{document}
-
-% endif for #ifdef PREAMBLE
+div { text-align: justify; text-justify: inter-word; }
+</style>
 
 
+<script src="http://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script>
+<link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+<script>
+$(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+});
+</script>
 
-% ------------------- main content ----------------------
+</head>
 
-% Slides for PHY981
+<!-- tocinfo
+{'highest level': 2,
+ 'sections': [(' Some basic ingredients for a successful numerical project ',
+               2,
+               None,
+               '___sec0'),
+              (' Additional benefits: A structure approach to solving problems ',
+               2,
+               None,
+               '___sec1'),
+              (' Analysis of project, Configuration Interaction theory ',
+               2,
+               None,
+               '___sec2'),
+              (' Analysis of project, Many-body perturbation theory ',
+               2,
+               None,
+               '___sec3'),
+              (' Analysis of project, Many-body perturbation theory ',
+               2,
+               None,
+               '___sec4')]}
+end of tocinfo -->
+
+<body>
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+<!-- Slides for PHY981 -->
 
 
-% ----------------- title -------------------------
+<center><h1>How do develop a numerical project</h1></center>  <!-- document title -->
 
-\title{How do develop a numerical project}
+<p>
+<!-- author(s): Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA &amp; Department of Physics, University of Oslo, Oslo, Norway -->
 
-% ----------------- author(s) -------------------------
+<center>
+<b>Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA &amp; Department of Physics, University of Oslo, Oslo, Norway</b> 
+</center>
 
-\author{Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA {\&} Department of Physics, University of Oslo, Oslo, Norway\inst{}}
-\institute{}
-% ----------------- end author(s) -------------------------
+<p>
+<!-- institution(s) -->
+<p>
+<center><h4>May 18-22 2015</h4></center> <!-- date -->
+<p>
+<!-- !split -->
 
-\date{May 18-22 2015
-% <optional titlepage figure>
-}
-
-\begin{frame}[plain,fragile]
-\titlepage
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Some basic ingredients for a successful numerical project}
-
-\begin{block}{}
+<h2 id="___sec0">Some basic ingredients for a successful numerical project </h2>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
 In when building up a numerical project there are several elements you should think of
-\begin{enumerate}
-  \item How to structure a code in terms of functions
 
-  \item How to make a module
+<ol>
+  <li> How to structure a code in terms of functions</li>
+  <li> How to make a module</li>
+  <li> How to read input data flexibly from the command line</li>
+  <li> How to create graphical/web user interfaces</li>
+  <li> How to write unit tests (test functions or doctests)</li>
+  <li> How to refactor code in terms of classes (instead of functions only)</li>
+  <li> How to conduct and automate large-scale numerical experiments</li>
+  <li> How to write scientific reports in various formats (LaTeX, HTML)</li>
+</ol>
+</div>
 
-  \item How to read input data flexibly from the command line
 
-  \item How to create graphical/web user interfaces
+<p>
+<!-- !split -->
 
-  \item How to write unit tests (test functions or doctests)
-
-  \item How to refactor code in terms of classes (instead of functions only)
-
-  \item How to conduct and automate large-scale numerical experiments
-
-  \item How to write scientific reports in various formats ({\LaTeX}, HTML)
-\end{enumerate}
-
-\noindent
-\end{block}
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Additional benefits: A structure approach to solving problems}
-
-\begin{block}{}
+<h2 id="___sec1">Additional benefits: A structure approach to solving problems </h2>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
 The conventions and techniques outlined here will save you a lot of time when you incrementally extend software over time from simpler to more complicated problems. In particular, you will benefit from many good habits:
-\begin{enumerate}
-\item New code is added in a modular fashion to a library (modules)
 
-\item Programs are run through convenient user interfaces
+<ol>
+<li> New code is added in a modular fashion to a library (modules)</li>
+<li> Programs are run through convenient user interfaces</li>
+<li> It takes one quick command to let all your code undergo heavy testing</li> 
+<li> Tedious manual work with running programs is automated,</li>
+<li> Your scientific investigations are reproducible, scientific reports with top quality typesetting are produced both for paper and electronic devices.</li>
+</ol>
+</div>
 
-\item It takes one quick command to let all your code undergo heavy testing 
 
-\item Tedious manual work with running programs is automated,
+<p>
+<!-- !split -->
 
-\item Your scientific investigations are reproducible, scientific reports with top quality typesetting are produced both for paper and electronic devices.
-\end{enumerate}
+<h2 id="___sec2">Analysis of project, Configuration Interaction theory </h2>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<p>
 
-\noindent
-\end{block}
-\end{frame}
 
-\begin{frame}[plain,fragile]
-\frametitle{Analysis of project, Configuration Interaction theory}
-
-\begin{block}{}
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+<div class="compute"><script type="text/x-sage">
 from numpy import *
 from sympy import *
 from matplotlib.pyplot import *
@@ -242,16 +230,23 @@ savefig("proj1_ref2.pdf")
 show()
 	
 
-\end{minted}
 
-\end{block}
-\end{frame}
+</script></div>
 
-\begin{frame}[plain,fragile]
-\frametitle{Analysis of project, Many-body perturbation theory}
+</div>
 
-\begin{block}{}
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+
+<p>
+<!-- !split -->
+
+<h2 id="___sec3">Analysis of project, Many-body perturbation theory </h2>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<p>
+
+
+<div class="compute"><script type="text/x-sage">
 	
 from sympy import *
 from pylab import *
@@ -444,16 +439,23 @@ legend(["2. order MPBT", "3. order MPBT", "4. order MPBT"], 'lower left')
 grid()
 savefig("logerror.pdf")
 show()
-\end{minted}
 
-\end{block}
-\end{frame}
+</script></div>
 
-\begin{frame}[plain,fragile]
-\frametitle{Analysis of project, Many-body perturbation theory}
+</div>
 
-\begin{block}{}
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+
+<p>
+<!-- !split -->
+
+<h2 id="___sec4">Analysis of project, Many-body perturbation theory </h2>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<p>
+
+
+<div class="compute"><script type="text/x-sage">
 from sympy import *
 from pylab import *
 
@@ -579,9 +581,16 @@ print "s38 = ", repr(s38)
 print "s39 = ", repr(s39)
 	
 
-\end{minted}
 
-\end{block}
-\end{frame}
+</script></div>
 
-\end{document}
+</div>
+
+
+<!-- ------------------- end of main content --------------- -->
+
+
+</body>
+</html>
+    
+
