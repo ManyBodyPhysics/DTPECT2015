@@ -4,82 +4,23 @@ AUTHOR: Morten Hjorth-Jensen, National Superconducting Cyclotron Laboratory and 
 DATE: May 18-22 2015
 
 
-=====  Introduction =====
-Coupled Cluster is an important ab initio technique in computational chemistry. It is considered the most reliable and also computational affordable method for solving the electronic Schr\"{o}dinger equation. It was introduced in Quantum Chemistry by Paldus and Cizek in the late 1960s. Then it was derived using Feynman-like diagrams, however about ten years later Hurley re-derived the equations in terms more familiar to most physicists. In this chapter we will look at the derivation of coupled cluster singles and doubles (CCSD), using the results from Hartree Fock.
+===== Introduction ===== 
+Coupled Cluster is an important ab initio
+technique in computational chemistry. It is considered the most
+reliable and also computational affordable method for solving the
+electronic Schroedinger equation. It was introduced in Quantum
+Chemistry by Paldus and Cizek in the late 1960s. 
 
-This chapter is almost solely based on a book by T. Daniel Crawford and Henry S. Schaeffer III, 
-Ref
 
 ======= Creation and Annihilation operators =======
-In Coupled Cluster, CC, we will solve the Schr\"{o}dinger equation.
+In Coupled Cluster (CC) we will solve the Schroedinger equation
 
 !bt
 \begin{equation}
-\mathbf{H} | \Psi \rangle = E | \Psi \rangle label{SE} .
+\mathbf{H} | \Psi \rangle = E | \Psi \rangle label{eq:SE} .
 \end{equation}
 !et
-From Hartree Fock calculations we have created a $|\Psi\rangle_{HF}$ which contains MOs in a Slater determinant. Dirac notation provides a simple representation of this. In Dirac notation only the diagonal terms in the slater determinant are listed. If $|\Psi_0 \rangle$ has four electrons Dirac notation would be
-
-!bt
-\begin{equation}
-|\Psi_0 \rangle =  |\psi_i(r_1), \psi_j(r_2), \psi_k(r_3), \psi_l(r_4) \rangle . label{dirac_not} 
-\end{equation}
-!et
-Eq. ref{dirac_not} will be used to introduce a few new operators needed. The creation operator $\mathbf{a}^{\dagger}_m$ creates a new electron in orbital m.
-
-!bt 
-\begin{equation}
-\mathbf{a}^{\dagger}_m |\psi_i(r_1), \psi_j(r_2), \psi_k(r_3), \psi_l(r_4) \rangle = |\psi_i(r_1), \psi_j(r_2), \psi_k(r_3), \psi_l(r_4), \psi_m(r_5) \rangle .
-\end{equation}
-!et
-The annihilation operator, $\mathbf{a}_n$, destroys an electron in orbital n.
-
-!bt 
-\begin{equation}
-\mathbf{a}_n |\psi_i(r_1), \psi_j(r_2), \psi_k(r_3), \psi_l(r_4), \psi_n(r_5) \rangle = |\psi_i(r_1), \psi_j(r_2), \psi_k(r_3), \psi_l(r_4) \rangle  .
-\end{equation}
-!et
-These two operators working together can destroy one electron in orbital n, and create another in orbital m. The result is that one electron now occupies a different orbital, as such
-
-!bt 
-\begin{equation}
-\mathbf{a}^{\dagger}_m \mathbf{a}_n |\psi_i(r_1), \psi_j(r_2), \psi_k(r_3), \psi_n(r_4) \rangle = |\psi_i(r_1), \psi_j(r_2), \psi_k(r_3), \psi_m(r_4) \rangle .
-\end{equation} 
-!et
-These operators have a few interesting features. Such as the annihilation operator acting on the vacuum state produces 0.
-
-!bt 
-\begin{equation}
-a_n | \rangle = 0  .
-\end{equation} 
-!et
-Interchanging two rows in the Slater determinant introduce a change in the sign. Hence we have
-
-!bt 
-\begin{equation}
-\mathbf{a}^{\dagger}_m \mathbf{a}^{\dagger}_n | \rangle = |\psi_m, \psi_n \rangle = - |\psi_n, \psi_m \rangle = -\mathbf{a}^{\dagger}_n \mathbf{a}^{\dagger}_m | \rangle  .
-\end{equation} 
-!et
-
-!bt 
-\begin{equation}
-\Rightarrow \mathbf{a}^{\dagger}_m \mathbf{a}^{\dagger}_n + \mathbf{a}^{\dagger}_n \mathbf{a}^{\dagger}_m = 0 .
-\end{equation} 
-!et
-The same applies to the annihilation operator.
-
-!bt 
-\begin{equation}
-\mathbf{a}_m \mathbf{a}_n + \mathbf{a}_n \mathbf{a}_m = 0 .
-\end{equation} 
-!et
-These are known as anti commutation relations. It can be shown that the anti commutation relation when mixing $\mathbf{a}$ and $\mathbf{a}^{\dagger}$ is
-
-!bt 
-\begin{equation}
-\mathbf{a}^{\dagger}_m \mathbf{a}_n + \mathbf{a}_n \mathbf{a}^{\dagger}_m = \delta_{mn} . label{ccsd_anni_creato_operator_combo}
-\end{equation} 
-!et
+From Hartree Fock calculations we have created a $|\Psi\rangle_{HF}$ which contains orbitals in a Slater determinant. 
 
 ======= CCSD Wavefunction =======
 The first step in coupled cluster is rewriting the wavefunction,
@@ -89,13 +30,17 @@ The first step in coupled cluster is rewriting the wavefunction,
 |\Psi_{CC} \rangle \equiv e^{\mathbf{T}} | \Psi_{HF} \rangle .
 \end{equation} 
 !et 
-$\mathbf{T}$ is known as the cluster operator. This includes all possible excitations. $|\Psi_{CC} \rangle$ is thus a linear combination of Slater determinants of all possible excitations and is an exact solution to Eq. ref{SE}. $\mathbf{T}$ can be defined in terms of a one-orbital excitation operator, a two-orbital excitation operator and so on.
-
+The quantity $\mathbf{T}$ is known as the cluster operator. 
+This includes all possible excitations. This means that 
+$|\Psi_{CC} \rangle$ is a linear combination of 
+Slater determinants of all possible excitations and is an exact solution to Eq. (ref{eq:SE}). The cluster operator
+$\mathbf{T}$ can be defined in terms of a one-orbital excitation operator, a two-orbital excitation operator etc, that is
 !bt 
 \begin{equation}
 \mathbf{T} \equiv \mathbf{T}_1 + \mathbf{T}_2 + \mathbf{T}_3 + \mathbf{T}_4 \dots .
 \end{equation} 
 !et
+A popular approximation is called coupled cluster at the level of singles and doubles excitations
 When doing CCSD only single excitations, $\mathbf{T}_1$, and double excitations, $\mathbf{T}_2$, are included. 
 
 !bt 
