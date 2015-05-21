@@ -9,6 +9,21 @@
 
 
 
+<script src="http://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script src="http://sagecell.sagemath.org/embedded_sagecell.js"></script>
+<link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+<script>
+$(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+});
+</script>
+
 
 
 
@@ -177,59 +192,62 @@ The conventions and techniques outlined here will save you a lot of time when yo
 <b></b>
 <p>
 
-<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
-<div class="highlight" style="background: #eeeedd"><pre style="font-size: 80%; line-height: 125%"><span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">import</span> *
-<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">sympy</span> <span style="color: #8B008B; font-weight: bold">import</span> *
-<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">import</span> *
+
+<div class="compute"><script type="text/x-sage">
+from numpy import *
+from sympy import *
+from matplotlib.pyplot import *
 
 
-g_array = linspace(-<span style="color: #B452CD">1</span>, <span style="color: #B452CD">1</span>, <span style="color: #B452CD">1001</span>)
+g_array = linspace(-1, 1, 1001)
 e1_array = []
 e2_array = []
 
-<span style="color: #8B008B; font-weight: bold">for</span> g <span style="color: #8B008B">in</span> g_array:
-	H1 = matrix([[<span style="color: #B452CD">2</span>-g , -g/<span style="color: #B452CD">2.</span>,  -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,     <span style="color: #B452CD">0</span>], 
-		        [-g/<span style="color: #B452CD">2.</span>,   <span style="color: #B452CD">4</span>-g,  -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,    <span style="color: #B452CD">0.</span>, -g/<span style="color: #B452CD">2.</span>],
-		        [-g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,    <span style="color: #B452CD">6</span>-g,     <span style="color: #B452CD">0</span>, -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>],
-				[-g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,      <span style="color: #B452CD">0</span>,   <span style="color: #B452CD">6</span>-g, -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>],
-				[-g/<span style="color: #B452CD">2.</span>,     <span style="color: #B452CD">0</span>,  -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,   <span style="color: #B452CD">8</span>-g, -g/<span style="color: #B452CD">2.</span>],
-				[<span style="color: #B452CD">0</span>    , -g/<span style="color: #B452CD">2.</span>,  -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,  <span style="color: #B452CD">10</span>-g]]) 
+for g in g_array:
+	H1 = matrix([[2-g , -g/2.,  -g/2., -g/2., -g/2.,     0], 
+		        [-g/2.,   4-g,  -g/2., -g/2.,    0., -g/2.],
+		        [-g/2., -g/2.,    6-g,     0, -g/2., -g/2.],
+				[-g/2., -g/2.,      0,   6-g, -g/2., -g/2.],
+				[-g/2.,     0,  -g/2., -g/2.,   8-g, -g/2.],
+				[0    , -g/2.,  -g/2., -g/2., -g/2.,  10-g]]) 
 
-	H2 = matrix([[<span style="color: #B452CD">2</span>-g , -g/<span style="color: #B452CD">2.</span>,  -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>], 
-		        [-g/<span style="color: #B452CD">2.</span>,   <span style="color: #B452CD">4</span>-g,  -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,    <span style="color: #B452CD">0.</span>],
-		        [-g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,    <span style="color: #B452CD">6</span>-g,     <span style="color: #B452CD">0</span>, -g/<span style="color: #B452CD">2.</span>],
-				[-g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,      <span style="color: #B452CD">0</span>,   <span style="color: #B452CD">6</span>-g, -g/<span style="color: #B452CD">2.</span>],
-				[-g/<span style="color: #B452CD">2.</span>,     <span style="color: #B452CD">0</span>,  -g/<span style="color: #B452CD">2.</span>, -g/<span style="color: #B452CD">2.</span>,   <span style="color: #B452CD">8</span>-g]]) 
+	H2 = matrix([[2-g , -g/2.,  -g/2., -g/2., -g/2.], 
+		        [-g/2.,   4-g,  -g/2., -g/2.,    0.],
+		        [-g/2., -g/2.,    6-g,     0, -g/2.],
+				[-g/2., -g/2.,      0,   6-g, -g/2.],
+				[-g/2.,     0,  -g/2., -g/2.,   8-g]]) 
 
 		
 
 	u1, v1 = linalg.eig(H1)
 	u2, v2 = linalg.eig(H2)
 
-	<span style="color: #8B008B; font-weight: bold">if</span> g == <span style="color: #B452CD">1.</span>/<span style="color: #B452CD">2</span>:
-		<span style="color: #8B008B; font-weight: bold">print</span> argmin(u1)
+	if g == 1./2:
+		print argmin(u1)
 
-		<span style="color: #8B008B; font-weight: bold">for</span> i <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">5</span>):
-			<span style="color: #8B008B; font-weight: bold">print</span> <span style="color: #CD5555">&quot; %.3f &quot;</span> % v2[i,<span style="color: #B452CD">0</span>],
-
-
-
-	e1_array.append(<span style="color: #658b00">min</span>(u1))
-	e2_array.append(<span style="color: #658b00">min</span>(u2))
+		for i in range(5):
+			print " %.3f " % v2[i,0],
 
 
-plot(g_array, e1_array, linewidth=<span style="color: #B452CD">2.0</span>)
-<span style="color: #228B22">#plot(g_array, e2_array, linewidth=2.0)</span>
-plot(g_array, (<span style="color: #B452CD">2</span>-g_array), linewidth=<span style="color: #B452CD">2.0</span>)
+
+	e1_array.append(min(u1))
+	e2_array.append(min(u2))
+
+
+plot(g_array, e1_array, linewidth=2.0)
+#plot(g_array, e2_array, linewidth=2.0)
+plot(g_array, (2-g_array), linewidth=2.0)
 grid()
-xlabel(<span style="color: #CD5555">r&quot;Strength of interaction, $g$&quot;</span>, fontsize=<span style="color: #B452CD">16</span>)
-ylabel(<span style="color: #CD5555">r&#39;Ground state energy&#39;</span>, fontsize=<span style="color: #B452CD">16</span>)
-<span style="color: #228B22">#axis([-1,1,-0.4,0.05])</span>
-legend([<span style="color: #CD5555">&#39;FCI -- Exact&#39;</span>, <span style="color: #CD5555">&#39;Reference energy&#39;</span>])
-savefig(<span style="color: #CD5555">&quot;proj1_ref2.pdf&quot;</span>)
+xlabel(r"Strength of interaction, $g$", fontsize=16)
+ylabel(r'Ground state energy', fontsize=16)
+#axis([-1,1,-0.4,0.05])
+legend(['FCI -- Exact', 'Reference energy'])
+savefig("proj1_ref2.pdf")
 show()
 	
-</pre></div>
+
+
+</script></div>
 
 </div>
 </section>

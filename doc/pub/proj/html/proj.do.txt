@@ -34,7 +34,7 @@ The conventions and techniques outlined here will save you a lot of time when yo
 !split
 ===== Analysis of project, Configuration Interaction theory =====
 !bblock 
-!bc pycod
+!bc pyscpro
 from numpy import *
 from sympy import *
 from matplotlib.pyplot import *
