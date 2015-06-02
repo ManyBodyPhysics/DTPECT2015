@@ -67,11 +67,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/intro/pdf/intro-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/intro/pdf/intro-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/intro/html/intro-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/intro/html/intro-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/intro/ipynb/intro.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/intro/ipynb/intro.ipynb"
 
 
 
@@ -80,11 +80,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/secondquant/pdf/secondquant-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/secondquant/html/secondquant-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/secondquant/html/secondquant-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/secondquant/ipynb/secondquant.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/secondquant/ipynb/secondquant.ipynb"
 
 
 
@@ -93,11 +93,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/hfock/pdf/hfock-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/hfock/html/hfock-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/hfock/html/hfock-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/hfock/ipynb/hfock.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/hfock/ipynb/hfock.ipynb"
 
 
 
@@ -106,11 +106,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/fci/pdf/fci-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/fci/pdf/fci-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/fci/html/fci-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/fci/html/fci-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/fci/ipynb/fci.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/fci/ipynb/fci.ipynb"
 
 
 
@@ -119,11 +119,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/mbpt/pdf/mbpt-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/mbpt/html/mbpt-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/mbpt/html/mbpt-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/mbpt/ipynb/mbpt.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/mbpt/ipynb/mbpt.ipynb"
 
 
 
@@ -132,11 +132,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/cc/pdf/cc-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/cc/pdf/cc-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/cc/html/cc-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/cc/html/cc-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/cc/ipynb/cc.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/cc/ipynb/cc.ipynb"
 
 
 
@@ -145,11 +145,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/proj/pdf/proj-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/proj/pdf/proj-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/proj/html/proj-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/proj/html/proj-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/proj/ipynb/proj.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/proj/ipynb/proj.ipynb"
 
 
 
@@ -158,11 +158,11 @@ formulas in HTML or ipython notebook files.
 
 
  * LaTeX PDF for printing/viewing:
-   * "Standard one-page format": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/inf/pdf/inf-print.pdf"
+   * "Standard one-page format": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/inf/pdf/inf-print.pdf"
  * HTML:
-   * "solarized style": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/inf/html/inf-solarized.html"
+   * "solarized style": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/inf/html/inf-solarized.html"
  * iPython notebook:
-   * "ipynb file": "http://manybodyphysics.github.io//DTPECT2015/doc/pub/inf/ipynb/inf.ipynb"
+   * "ipynb file": "http://manybodyphysics.github.io/DTPECT2015/doc/pub/inf/ipynb/inf.ipynb"
 
 
 
